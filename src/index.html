@@ -231,6 +231,121 @@
           </p>
         </div>
       </article>
+            </article>
+
+      <button id="openModalBtn" type="button">
+        Open registration form
+      </button>
+
+      <p id="successMessage" class="success-message" role="status" hidden>
+        Form submitted successfully.
+      </p>
+
+      <div
+        id="modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <div class="modal-content">
+          <button id="closeModalBtn" type="button" aria-label="Close modal">
+            &times;
+          </button>
+
+          <h2 id="modalTitle">Create an account</h2>
+
+          <form id="signupForm" novalidate>
+             <div class="form-group">
+    <label for="fullName">Full Name</label>
+
+    <input
+      id="fullName"
+      name="fullName"
+      type="text"
+      autocomplete="name"
+      required
+      aria-describedby="fullNameError"
+    />
+
+    <p id="fullNameError" class="error-message" hidden>
+      Please enter your full name.
+    </p>
+  </div>
+        <div class="form-group">
+  <label for="email">Email</label>
+
+  <input
+    id="email"
+    name="email"
+    type="email"
+    autocomplete="email"
+    required
+    aria-describedby="emailError"
+  />
+
+  <p id="emailError" class="error-message" hidden>
+    Please enter a valid email address.
+  </p>
+</div>
+<div class="form-group">
+  <label for="password">Password</label>
+
+  <input
+    id="password"
+    name="password"
+    type="password"
+    autocomplete="new-password"
+    required
+    aria-describedby="passwordError"
+  />
+
+  <p id="passwordError" class="error-message" hidden>
+    Please enter a password.
+  </p>
+</div>
+<div class="form-group">
+  <label for="confirmPassword">Confirm Password</label>
+
+  <input
+    id="confirmPassword"
+    name="confirmPassword"
+    type="password"
+    autocomplete="new-password"
+    required
+    aria-describedby="confirmPasswordError"
+  />
+
+  <p id="confirmPasswordError" class="error-message" hidden>
+    Passwords must match.
+  </p>
+</div>
+<div class="form-group checkbox-group">
+  <input
+    id="terms"
+    name="terms"
+    type="checkbox"
+    required
+    aria-describedby="termsError"
+  />
+
+  <label for="terms">
+    I agree to the imaginary Terms & Conditions
+  </label>
+</div>
+
+<p id="termsError" class="error-message" hidden>
+  You must agree to the Terms & Conditions.
+</p>
+<button type="submit">
+    Create Account
+  </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
     </main>
   </body>
 </html>
