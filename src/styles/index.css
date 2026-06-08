@@ -64,15 +64,44 @@ body {
 
 #closeModalBtn {
   position: absolute;
-
   top: 1rem;
   right: 1rem;
+
+  min-width: 24px;
+  min-height: 24px;
+
+  width: 32px;
+  height: 32px;
 
   border: none;
   background: none;
 
   font-size: 1.5rem;
+  line-height: 1;
+
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#terms {
+  width: 24px;
+  height: 24px;
+
+  min-width: 24px;
+  min-height: 24px;
+
+  flex-shrink: 0;
+}
+
+/* Checkbox row */
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .form-group {
@@ -135,3 +164,15 @@ button[type='submit'] {
 [hidden] {
   display: none !important;
 }
+
+[aria-invalid='true'] {
+  border-color: red;
+}
+
+#modalTitle {
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
