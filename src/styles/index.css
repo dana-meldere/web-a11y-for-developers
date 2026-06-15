@@ -144,9 +144,16 @@ body {
   font: inherit;
 }
 
-.form-group input:focus,
-#openModalBtn:focus,
-#closeModalBtn:focus {
+/* making the keyboard focus visible, using 'focus-visble' */
+.form-group input:focus-visible,
+#openModalBtn:focus-visible,
+#closeModalBtn:focus-visible,
+button[type='submit']:focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 3px;
+}
+/* making the keyboard focus visible, using 'focus-visble' for the checkbox */
+#terms:focus-visible {
   outline: 3px solid #1d4ed8;
   outline-offset: 3px;
 }
